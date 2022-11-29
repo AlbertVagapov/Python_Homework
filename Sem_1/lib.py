@@ -1,11 +1,11 @@
-def f(x):
-    if x == 1:
-        return 'целое'
-    elif x == 2.3:
-        return 23 
-    else:
-        return 
+# def f(x):
+#     if x == 1:
+#         return 'целое'
+#     elif x == 2.3:
+#         return 23 
+#     else:
+#         return 
 
 
-# x = 1
-# print(f(x))
+# # x = 1
+# # print(f(x))
