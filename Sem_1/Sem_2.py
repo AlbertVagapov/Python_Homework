@@ -21,3 +21,17 @@
 # import lib as b
 
 # print(b.f(1))
+
+# $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+
+# 1
+
+# Напишите программу, которая на вход принимет N и выдаёт последовательность из N членов
+
+# List_random = []
+# number = int(input("Введите число\n"))
+
+# for i in range(0, number):
+#     List_random.append((-3)**i)
+# print(List_random)
+
