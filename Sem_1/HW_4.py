@@ -35,17 +35,17 @@
 
 # 1
 
-# num = int(input("Введите число: "))
+# num = int(input("Введите число: ")) ## 10
 # i = 2 # первый простой множитель
 # lst = []
-# old = num
-# while i <= num:
-#     if num % i == 0:
-#         lst.append(i)
-#         num //= i
+# old = num  ## 10
+# while i <= num:  ## 2 <= 10; 2 <=5; 3 <= 5; 5 = 5; 2 <= 1(false)
+#     if num % i == 0:  # Если остаток от деления на 2 равно 0  ## true; false; true
+#         lst.append(i) # Добавляем в список lst  ## [2, 5]
+#         num //= i # Или num = num // i Целочисленное деление ## 5; 1
 #         i = 2
 #     else:
-#         i += 1
+#         i += 1 # 3
 # print(f"Простые множители числа {old} приведены в списке: {lst}")
 
 # $$$$$$$$$$$$$$$$$$$$$$$$$$$$
@@ -56,5 +56,50 @@
 # lst = list(map(int, input("Введите числа через пробел:\n").split()))
 # print(f"Исходный список: {lst}")
 # new_lst = []
-# [new_lst.append(i) for i in lst if i not in new_lst]
+# [new_lst.append(i) for i in lst if i not in new_lst] # метод if . not in . исключает всякие повторения
 # print(f"Список из неповторяющихся элементов: {new_lst}")
+
+# $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+
+# 3 - В файле, содержащем фамилии студентов и их оценки, изменить на прописные буквы фамилии тех студентов, которые имеют средний балл более «4».
+
+# from functions import get_list_data
+# from typing import List
+
+
+# def elements_to_caps(lst: list, trigger_str: str) -> List[str]:
+
+#     for i in range(len(lst)):
+#         if trigger_str in lst[i]:
+#             lst[i] = lst[i].upper()
+#     return lst
+
+# lst = get_list_data(r'C:\Users\mI\OneDrive\Документы\GeekBrains\2_Seminars\Python\Homework\Sem_1\Students.txt')
+
+# print(elements_to_caps(lst, '5'))
+
+# with open(r'C:\Users\mI\OneDrive\Документы\GeekBrains\2_Seminars\Python\Homework\Sem_1\Students.txt', 'w', encoding = 'utf-8') as data:
+#     for i in range(len(lst)):
+#         data.writelines(f'{lst[i]}\n')
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+# $$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+
+# 4- Шифр Цезаря - это способ шифрования, где каждая буква смещается на определенное количество символов влево или вправо. При расшифровке происходит обратная операция.
+# К примеру, слово "абба" можно зашифровать "бввб" - сдвиг на 1 вправо. "вггв" - сдвиг на 2 вправо, "юяяю" - сдвиг на 2 влево.
+# Сдвиг часто называют ключом шифрования.
+# Ваша задача - написать функцию, которая записывает в файл шифрованный текст, а также функцию, которая спрашивает ключ, считывает текст и дешифровывает его.
+
+# $$$$$$$$$$$$$$$$$$$$$$$$$$$$$
