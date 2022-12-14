@@ -1,3 +1,4 @@
+from random import randint
 from typing import List
 from typing import Optional
 
@@ -30,3 +31,15 @@ def get_list_data(filename: str) -> List[str]:
     '''
     with open(filename, encoding='utf-8') as file:
         return file.read().split('\n')
+
+def random_list(listlen: int) -> list:
+    '''
+    Gives list with random values
+    :param listlen: list's length
+    :return: list with random values
+    '''
+
+    datalist = list()
+    for i in range(listlen):
+        datalist.append(randint(1, 100))
+    return datalist

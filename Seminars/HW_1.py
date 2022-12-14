@@ -42,7 +42,7 @@
 #     if num > 7 or num < 1:
 #         print("это не цифра обозначающая день недели")
 #     elif num > 5:
-#         print("Да")
+#         print("Да")       
 #     else:
 #         print("нет")
 # else:
